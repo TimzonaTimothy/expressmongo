@@ -52,7 +52,7 @@ def about(request):
 	return render(request, 'box/about.html', {})
 
 def services(request):
-	return render(request, 'box/services.html', {})
+	return render(request, 'box/service.html', {})
 
 def sea_freight(request):
 	return render(request, 'box/sea-freight.html', {})
