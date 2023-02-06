@@ -1,0 +1,48 @@
+{% extends 'fast/base.html' %}
+{% load static %}
+{% block content %}
+
+        
+
+
+
+        <div class="welcome-area">
+            <div class="area-bg"></div>
+            <div class="container">
+                <div class="row flex-v-center">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="welcome-text text-center">
+                            <h2>Tracking</h2>
+                            <ul class="page-location">
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li>/</li>
+                                <li><a href="{% url 'track' %}">Tracking</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END TOP AREA-->
+<br>
+{% include 'fast/alerts.html' %}
+<center>
+    <form  action="{% url 'search' %}" class="search" method="GET" style="padding-top: 5px;">
+    <div class="container">
+        <div class="input-group w-100" style="display: flex;padding: 10px 22px;">
+            <input style="border-color: #f39c12;" type="text" class="form-control w-80" name="q" value="{{ request.GET.q }}" placeholder="Tracking number" required>
+            
+            
+              <button id="bt" class="btn btn-primary w-20" style="border-color: #f39c12;background-color:#f39c12;padding: 0px 30px;" type="submit">
+                <span class="txt" style="color:white;font-weight: lighter;">Track</span>
+              </button>
+            
+        </div>
+    </div>
+</form>
+</center>
+
+<br>
+
+{% endblock %}

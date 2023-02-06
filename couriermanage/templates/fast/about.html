@@ -1,0 +1,229 @@
+{% extends 'fast/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+        <div class="welcome-area">
+            <div class="area-bg"></div>
+            <div class="container">
+                <div class="row flex-v-center">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="welcome-text text-center">
+                            <h2>About Us</h2>
+                            <ul class="page-location">
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li>/</li>
+                                <li><a href="{% url 'about' %}">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END TOP AREA-->
+
+    <!--ABOUT AREA-->
+    <section class="about-area gray-bg section-padding">
+        <div class="container">
+            <div  class="row">
+                <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
+                    <div class="area-title text-center wow fadeIn">
+                        <h2>About EXPRESSGIG Couriers</h2>
+                        <p>One-stop freight and logistics solution, providing services to companies of all sizes, be it a small delivery across town or an industrial shipment to the other side of the globe.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5 col-lg-5 col-sm-12 col-xs-12">
+                    <div class="about-left-content-area wow fadeIn">
+                        <img src="{% static 'fast/img/3.jpg' %}" alt=""> 
+                        <p style="text-align:justify;">We believe that our first responsibility is to strengthen customer trust. All our services must be of the highest quality and meet customer requirements. We constantly strive to reduce our costs in order to maintain reasonable prices. Customers orders must be serviced promptly and accurately. We guarantee fair pricing and ensure that our service providers make a fair profit</p>
+                     <p style="text-align:justify;">
+					 We are responsible to our employees, the men and women who work with us. Everyone must be considered as an individual. We must respect their dignity and recognize their merit. They must have a sense of security in their jobs.
+					 </p>
+					 
+					 <p style="text-align:justify;">
+					 Compensation must be fair and adequate, and working conditions clean, orderly and safe. We must be mindful of many ways to help our employees fulfill their responsibilities towards their families. Employees must feel free to make suggestions and complaints. We strive to achieve competent management, and expect our employees to be just and ethical.
+					 </p>
+					 <p style="text-align:justify;">
+					 We are responsible towards the communities in which we live and work. We must be good citizens. Support good work, charities and bear our share of taxes. We maintain the properties we are privileged to use efficiently. We pledge support to any initiative that aims to protect the environment or natural resources.
+					 </p>
+					 
+					</div>
+                </div>
+                <div class="col-md-7 col-lg-7 col-sm-12 col-xs-12">
+                    <div class="about-content-area wow fadeIn">
+                        <div class="about-content">
+                            <h2>Our Mission</h2>
+                            <p style="text-align:justify;">
+							"one-stop freight and logistics solution, providing services to companies of all sizes, be it a small delivery across town or an industrial shipment to the other side of the globe. Based on a solid financial footing and having invested remarkable amount of money / time on information technology and other over heads, the company's capabilities of sourcing new clientele as well as improving cost efficiency are the key attributes for our success. Great Height and Logistics Company has maintained a significant role in the total transportation arena for over a short time with its professional accredited staff who are our real assets. 
+							</p>
+                            <a href="{% url 'contact' %}">Contact Us<i class="fa fa-angle-right"></i></a>
+							
+							<br>
+							<h2>Our Vision</h2>
+                            <p style="text-align:justify;">
+							 "Being the most preferred third party logistic solution and transportation provider for our clients worldwide and having our own presence globally. When the best overseas shipping service is your requirement then we are exactly what you need as we reach out to provide our clients with the best possible logistics solutions that are exceptional not just domestically but globally as well. 
+							 </p>
+                            <a href="{% url 'contact' %}">Contact Us<i class="fa fa-angle-right"></i></a>
+                        <br>
+							<h2>Our History</h2>
+                            <p style="text-align:justify;"> 
+						A lifetime's experience in logistics and freight forwarding has made this industry not just a business but a way of life for my team and myself. My vision was to create a solid company with strong values and standards where integrity, equality, loyalty and people stand on the highest plane. My team is my family and they have shared this vision from the company's inception. At EXPRESSGIG Couriers Logistics and Shipping Company, we work hard but when the time comes, we play even harder.
+						</p>
+						<p style="text-align:justify;"> 
+						Since the commencement of our operations in the USA, we have rapidly expanded our presence in the global market by establishing a network and strategic alliances with competent partners worldwide. The association expands our presence to more than 95 countries, offering complete logistics solutions to all industries.
+						</p>
+						
+						
+						</div>
+						
+						
+						
+						
+                        <!-- <div class="about-count">
+                            <div class="single-about-count">
+                                <h4><i class="fa fa-suitcase"></i> 120</h4>
+                                <p>Project Done</p>
+                            </div>
+                            <div class="single-about-count">
+                                <h4><i class="fa fa-thumbs-o-up"></i> 100</h4>
+                                <p>Project Done</p>
+                            </div>
+                            <div class="single-about-count">
+                                <h4><i class="fa fa-users"></i> 30</h4>
+                                <p>Project Done</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ABOUT AREA END-->
+
+    <!--FAQS AREA-->
+    <section class="faqs-area section-padding wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <div class="faqs-left-img">
+                        <img src="{% static 'fast/img/2.jpg' %}" alt=""> 
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                    <div class="faqs-list">
+                        <h3>why choose <span>EXPRESSGIG Couriers Logistics ?</span></h3>
+                        <div class="panel-group" id="accordion">
+                            <div class="panel active">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#faqs_one"><i class="fa fa-minus">
+										</i>we start our business 2016</a>
+                                    </h4>
+                                </div>
+                                <div id="faqs_one" class="panel-collapse collapse in">
+                                    <div class="panel-body" style="text-align:justify;">Since the commencement of our operations in the USA, we have rapidly expanded our presence in the global market by establishing a network and strategic alliances with competent partners worldwide. The association expands our presence to more than 95 countries, offering complete logistics solutions to all industries.</div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#faqs_two"><i class="fa fa-minus">
+										</i>we co-opperate problem solution</a>
+                                    </h4>
+                                </div>
+                                <div id="faqs_two" class="panel-collapse collapse">
+                                    <div class="panel-body" style="text-align:justify;"> At the same time, we keep a close eye on technology and future trends, considering that worldwide supply chains are beginning to undergo a fundamental transformation as more artificial intelligence is deployed to handle both the domestic and international movement of goods. The impact of data-driven and autonomous supply chains is appreciated to manifest in less and a decade and we are aligning and optimizing our business for this immediate future so that our clients can profit from the logistics of the future. Creativity, courage, strong business relationships and an insatiable thirst to explore new business avenues has made British Logistics a force to reckon with and we are acknowledged locally and internationally as an organization with an untarnished reputation and strong financial foundation.</div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#faqs_three"><i class="fa fa-minus">
+										</i>we are expanding our network </a>
+                                    </h4>
+                                </div>
+                                <div id="faqs_three" class="panel-collapse collapse">
+                                    <div class="panel-body" style="text-align:justify;">We continuously invest in building a competent team of professionals who are equipped with all the necessary skills to handle any type of logistics challenge and provide its users unique, time and cost efficient solutions. The team has perfected the art of moving each piece with the same zest, without losing eye on speed and accuracy. Reliable feedback systems, new technology implementation, continuous trainings and team building exercises speak volumes about the company's commitment to reward and maintain its talent.</div>
+                                </div>
+                            </div>
+                            <div class="panel">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#faqs_four"><i class="fa fa-minus">
+										</i>we serve worldwide</a>
+                                    </h4>
+                                </div>
+                                <div id="faqs_four" class="panel-collapse collapse">
+                                    <div class="panel-body" style="text-align:justify;"> All of this makes us the perfect business partner for any company looking to associate with a professional, innovative, customer oriented, and global logistics provider. In closing, I would like to invite you to explore our website and learn more about our expertise and the multitude of ways in which we can make your business succeed.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FAQS AREA END-->
+
+    <!--PROMO AREA-->
+    <section class="promo-area">
+        <div class="promo-bottom-area section-padding">
+            <div style="background: rgba(0, 0, 0, 0) url('{% static "fast/img/promo/wi3.jpeg" %}') no-repeat scroll center center / cover;
+                 height: 100%; left: 0; position: absolute; top: 0; width: 100%;" class="promo-botton-area-bg" data-stellar-background-ratio="0.6"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-12 text-center">
+                        <div class="promo-bottom-content wow fadeIn">
+                            <h2>we provide international freight &amp; logistics service worldwide</h2>
+                            <!-- <a href="user/contact-us-2.html" class="read-more">Get a quote</a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PROMO AREA END-->
+
+     
+
+    <!--CLIENTS AREA-->
+    <!-- <section class="clients-area section-padding wow fadeIn"> -->
+        <!-- <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                    <div class="client-list">
+                        <div class="single-client">
+                            <img src="{% static 'fast/img/partners/1.png' %}" alt="">
+                        </div>
+                        <div class="single-client">
+                            <img src="{% static 'fast/img/partners/2.png' %}" alt="">
+                        </div>
+                        <div class="single-client">
+                            <img src="{% static 'fast/img/partners/3.png' %}" alt="">
+                        </div>
+                        <div class="single-client">
+                            <img src="{% static 'fast/img/partners/4.png' %}" alt="">
+                        </div>
+                        <div class="single-client">
+                            <img src="{% static 'fast/img/partners/5.png' %}" alt="">
+                        </div>
+						<div class="single-client">
+                            <img src="{% static 'fast/img/partners/6.png' %}" alt="">
+                        </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- </section> -->
+    <!--CLIENTS AREA END-->
+
+      
+
+
+{% endblock %}

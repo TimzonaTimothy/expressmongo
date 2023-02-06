@@ -1,0 +1,212 @@
+{% extends 'box\base.html' %} {% block content %} {% load static %}
+
+
+    <section class="breadcrumb breadcrumb_bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumb_iner text-center">
+              <div class="breadcrumb_iner_item">
+                <h2>about</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about_part single_about_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="about_part_img">
+              <h2>about us</h2>
+              <img src="{% static 'box/img/about_2.png' %}" alt="#" />
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <div class="about_part_text">
+              <div class="about_text_iner">
+                <p>
+                  EXPRESSMONGO Couriers Service and Shipping Company is a one-stop
+              freight and logistics solution, providing services to companies of
+              all sizes, be it a small delivery across town or an industrial
+              shipment to the other side of the globe.
+                </p>
+                <p>
+                  Based on a solid financial footing and having invested remarkable
+              amount of money / time on information technology and other over
+              heads, the company's capabilities of sourcing new clients as well
+              as improving cost efficiency are the key attributes for our
+              success. Great Height Logistic has maintained a significant role
+              in the total transportation arena for over a short time with its
+              professional accredited staff who are our real assets.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="regervation_part section_padding">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-between">
+          <div class="col-lg-5 col-md-6">
+            <div class="regervation_part_iner">
+              <h2>Get A Quote</h2>
+              <form method="post" action="">
+                {% csrf_token %}
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="inputEmail4"
+                      placeholder="Name"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Name'"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="inputPassword4"
+                      placeholder="Email or phone"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Email or phone'"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="inputPassword5"
+                      placeholder="Dapurtare"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Dapurtare'"
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="pnone"
+                      placeholder="Arrival"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Arrival'"
+                    />
+                  </div>
+                  <div class="form-group col-md-12">
+                    <div class="input-group date">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="inputPassword6"
+                        placeholder="Cargo Description"
+                        onfocus="this.placeholder = ''"
+                        onblur="this.placeholder = 'Cargo Description'"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group time_icon col-md-12">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="inputPassword7"
+                      placeholder="Transportation Method"
+                      onfocus="this.placeholder = ''"
+                      onblur="this.placeholder = 'Transportation Method'"
+                    />
+                  </div>
+                </div>
+                <div class="regerv_btn">
+                  <a href="#" class="btn_1">GET A QUOTE</a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class="reservation_text">
+              <h2>We provide international freight & logistics service worldwide</h2>
+          <!-- <p>
+            abore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud
+            exercitation ullamco laboris nisi ut aliquip. Labore et dolore magna
+            aliqua.
+          </p> -->
+          <a href="{% url 'services' %}" class="btn_1">check now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="client_review deliveries_part section_padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="deliveries_tittle">
+              <h2>Happy Clients</h2>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="deliveries_slider owl-carousel">
+              <div class="single_deliveries">
+                <div class="single_deliveries_text">
+                  <div class="single_deliveries_text_iner">
+                    <img src="{% static 'box/img/client/client_1.png' %}" alt="" />
+                    <p>
+                      EXPRESSMONGO Couriers is very affordable
+                    </p>
+                    <h5>John Keats</h5>
+                    <span>Legal Practitioner</span>
+                  </div>
+                </div>
+              </div>
+              <div class="single_deliveries">
+                <div class="single_deliveries_text">
+                  <div class="single_deliveries_text_iner">
+                    <img src="{% static 'box/img/client/client_2.png' %}" alt="" />
+                    <p>
+                      I so much rely on EXPRESSMONGO Couriers for their fast delivery services
+                    </p>
+                    <h5>Ernest Hemingway</h5>
+                    <span>Senior Staff</span>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="single_deliveries">
+                <div class="single_deliveries_text">
+                  <div class="single_deliveries_text_iner">
+                    <img src="{% static 'box/img/client/client_3.png' %}" alt="" />
+                    <p>
+                      Give dry stars form. Us called an won't winged had land
+                      cru abundantly land Midst
+                    </p>
+                    <h5>Danyel Yarde</h5>
+                    <span>CEO & Founder</span>
+                  </div>
+                </div>
+              </div> -->
+              <div class="single_deliveries">
+                <div class="single_deliveries_text">
+                  <div class="single_deliveries_text_iner">
+                    <img src="{% static 'box/img/client/client_3.png' %}" alt="" />
+                    <p>
+                      EXPRESSGIG Couriers is the best Shipping company of 21st Century
+                    </p>
+                    <h5>Associate Thomas A. Brown</h5>
+                    <span>CEO & Founder</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+{% endblock %}

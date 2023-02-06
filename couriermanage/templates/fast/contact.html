@@ -1,0 +1,114 @@
+{% extends 'fast/base.html' %}
+{% load static %}
+{% block content %}
+        
+
+
+
+        <div class="welcome-area">
+            <div class="area-bg"></div>
+            <div class="container">
+                <div class="row flex-v-center">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="welcome-text text-center">
+                            <h2>Contact</h2>
+                            <ul class="page-location">
+                                <li><a href="{% url 'home' %}">Home</a></li>
+                                <li>/</li>
+                                <li><a href="{% url 'contact' %}">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END TOP AREA-->
+<br>
+{% include 'fast/alerts.html' %}
+<center>
+    <section class="section-padding-100 contact_us_area" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-heading text-center">
+                        <div class="more-dots justify-content-center fadeInUp" data-wow-delay="0.2s">
+                           
+                        </div>
+                        <h2 class="wow fadeInUp d-blue" data-wow-delay="0.3s" style="font-family: Roboto;">Contact Us</h2>
+                        <!-- <p class="wow fadeInUp" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis accumsan nisi Ut ut felis congue nisl hendrerit commodo.</p> -->
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!-- Contact Form -->
+            <div class="row justify-content-center">
+                <div>
+                    <div class="contact_form">
+                        <form method="post" >
+                            {% csrf_token %}
+                            <div class="row">
+                                
+
+                                <div style="margin-top: 20px;" class="col-12 col-md-6">
+                                    <div class="group wow fadeInUp" data-wow-delay="0.2s">
+                                        
+                                        <input style="border-color: #f39c12;" class="form-control" type="text" name="firstname" required=required placeholder="First Name">
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        
+                                    </div>
+                                </div> 
+                                <div style="margin-top: 20px;" class="col-12 col-md-6">
+                                    <div class="group wow fadeInUp" data-wow-delay="0.3s">
+                                        
+                                        <input style="border-color: #f39c12;" class="form-control" type="text" name="lastname"  required=required placeholder="Last Name">
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        
+                                    </div>
+                                </div> 
+                                <div style="margin-top: 20px;" class="col-12 col-md-6">
+                                    <div class="group wow fadeInUp" data-wow-delay="0.4s">
+                                        
+                                        <input class="form-control" style="border-color: #f39c12;" type="email" name="email" required=required  placeholder="Email">
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        
+                                    </div>
+                                </div> 
+                                <div style="margin-top: 20px;margin-bottom: 20px;" class="col-12 col-md-6">
+                                    <div class="group wow fadeInUp" data-wow-delay="0.4s">
+                                        
+                                        <input class="form-control" type="text" style="border-color: #f39c12;" name="massage_subject"  placeholder="Subject">
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                       
+                                    </div>
+                                </div> 
+                                <br>
+                                <div style="" class=" container col-12 md-form mb-0 w-100">
+                                    <div class="group wow fadeInUp" data-wow-delay="0.5s">
+                                        
+                                        <textarea class="form-control" style="border-color: #f39c12;" name="message"  required=required  placeholder="Message"></textarea>
+                                        
+                                        
+                                    </div><br>
+                                    <button class="btn btn-secondary" style="margin-top: 22px;float: left;border-color: #f39c12;background-color:#f39c12;"type="submit" ><span class="txt" style="color:white;font-weight: lighter;">Send Message</span></button>
+                              
+                                </div> 
+                                
+                                
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</center>
+
+<br>
+   
+{% endblock %}

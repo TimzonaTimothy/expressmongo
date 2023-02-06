@@ -1,0 +1,123 @@
+.row{
+ width: 100%;
+ height: 12%;
+}
+.column {
+    float: left;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .left {
+    /* width: 25%; */
+    /* background-color: black; */
+    /* background-color: green; */
+    height: 130px;
+    width: 22%;
+    margin-left: 10%;
+    
+  }
+  
+  .right {
+    width: 52%;
+    margin-left: 8%;
+    background-color: rgb(248, 195, 48);
+    height: 12%;
+    
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+#para{
+    padding-right: 1%;
+    padding-left: 1%;
+    font-weight: 600;
+    text-align: center;
+    font-size: 100%;
+}
+
+#head{
+    background-color: rgb(29, 29, 122);
+    color: white;
+}
+#customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 6%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+
+  }
+
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(41, 41, 109);
+    color: white;
+    width: 90%;
+  }
+  #para1{
+      margin-left: 6%;
+      font-size: 20px;
+      font-weight: 600;
+  }
+  #span{
+      background-color: green;
+      color: white;
+      border-radius: 3px;
+      font-weight: bold;
+      padding: 2px;
+  }
+  #par{
+      background-color: orange;
+      color: black;
+      width: 190px;
+      font-weight: 800;
+      padding-left: 3px;
+      padding-right: 3px;
+      padding-bottom: 3px;
+      font-size: 18px;
+      border-radius: 3px;
+  }
+  #tra{
+      text-align: center;
+      font-weight: 800;
+      font-size: 17px;
+  }
+  #sta{
+      text-align: center;
+  }
+  #bold{
+      font-weight: 800;
+      width: 25%;
+  }
+
+
+  @media screen and (max-width: 600px) {
+    .right, .left, .row:after{
+        float: none;
+        /* text-align: center; */
+        width: 90%;
+        padding: 10px;
+        margin: 10px;
+      
+    }
+
+    .right{
+      margin-left:32px;
+    }
+   
+}

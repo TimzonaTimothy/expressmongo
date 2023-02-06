@@ -1,0 +1,130 @@
+{% extends 'fast/base.html' %}
+{% load static %}
+{% block content %}
+
+
+ 
+
+
+        <div class="welcome-area">
+            <div class="area-bg"></div>
+            <div class="container">
+                <div class="row flex-v-center">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="welcome-text text-center">
+                            <h2>Warehouse</h2>
+                            <ul class="page-location">
+                                <li><a href="{% url 'services' %}">Service</a></li>
+                                <li>/</li>
+                                <li><a href="{% url 'warehouse' %}">Warehouse</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END TOP AREA-->
+
+           <!--SERVICE AREA-->
+        <section class="service-area-two section-padding gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12 pull-right">
+                        <div class="service-details-content">
+                            <div class="service-image">
+                                <img src="{% static 'fast/img/11.jpg' %}" alt=""> -->
+                            </div>
+                            <div class="service-details-text">
+                                <h3>Warehouse</h3>
+                                <p>Whether its stand-alone warehousing service or combining it with other services to serve your needs, Embassy Courier can provide a totally integrated solution. You can count on our services team to handle your problems as well as your products.<br><br>
+
+                                    The scope of our service is commonly classified in the area of the inventory management, warehousing, transport, and logistics. Our services help our clients understand their current issues and ensure cost-effective warehousing services with benchmarked customer service levels.<br><br>
+
+                                    We help clients move or consolidate current facilities and operations. We can manage your warehouse or provide a new warehouse or a combination of both.</p>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                    <div class="faqs-left-img">
+                                        <img src="{% static 'fast/img/31.jpg' %}" alt=""> 
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                    <div class="faqs-list">
+                                        <h3>why choose EXPRESSGIG Couriers Company</h3>
+                                        <div class="panel-group" id="accordion">
+                                            <div class="panel active">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#faqs_one"><i class="fa fa-minus"></i>Single point of contact</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="faqs_one" class="panel-collapse collapse">
+                                                    <div class="panel-body">In EXPRESSGIG Couriers Company we reach our clients around the globe from a primary source</div>
+                                                </div>
+                                            </div>
+                                            <div class="panel">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#faqs_two"><i class="fa fa-minus"></i>Regular and timely status updates</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="faqs_two" class="panel-collapse collapse">
+                                                    <div class="panel-body">In EXPRESSGIG Couriers Company we update our clients and their destination in real time of every step we take in sending their packages</div>
+                                                </div>
+                                            </div>
+                                            <div class="panel">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#faqs_three"><i class="fa fa-minus"></i>Simplified transportations and freight process</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="faqs_three" class="panel-collapse collapse">
+                                                    <div class="panel-body">Because of our company capacity  and our determination to serve you better, transportation and freight process are like mare formalities</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 pull-left">
+                        <div class="service-menu">
+                            <h4>Service Details</h4>
+                            <ul>
+                                <li><a href="{% url 'land-freight' %}">Land Freight <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="{% url 'sea-freight' %}">Sea Freight <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="{% url 'air-freight' %}">Air Freight <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="{% url 'warehouse' %}">Warehouse  <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="{% url 'custom-clearance' %}">Custom Clearance <i class="fa fa-angle-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--SERVICE AREA END-->
+ <!--FOOER AREA-->
+        <div class="promo-bottom-area section-padding">
+            <div class="promo-botton-area-bg" data-stellar-background-ratio="0.6"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-12 text-center">
+                        <div class="promo-bottom-content wow fadeIn">
+                            <h2>We provide international freight &amp; logistics service worldwide</h2>
+                            <a href="{% url 'services' %}" class="read-more">Get our service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--PROMO AREA END-->
+    <!--FOOER AREA-->
+        
+
+{% endblock %}

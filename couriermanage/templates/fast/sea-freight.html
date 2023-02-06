@@ -1,0 +1,139 @@
+{% extends 'fast/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+
+
+        <div class="welcome-area">
+            <div class="area-bg"></div>
+            <div class="container">
+                <div class="row flex-v-center">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="welcome-text text-center">
+                            <h2>Sea Freight</h2>
+                            <ul class="page-location">
+                                <li><a href="{% url 'services' %}">Service</a></li>
+                                <li>/</li>
+                                <li><a href="{% url 'sea-freight' %}">Sea Freight</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END TOP AREA-->
+
+            <!--SERVICE AREA-->
+        <section class="service-area-two section-padding gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12 pull-right">
+                        <div class="service-details-content">
+                            <div class="service-image">
+                                <img src="{% static 'fast/img/blog/blog_1.jpeg' %}" alt="">
+                            </div>
+                            <div class="service-details-text">
+                                <h3>sea Freight</h3>
+                                <p>EXPRESSGIG Couriers and shipping Company having its strong alliance with shipping companies and global freight partners enables to offer cost effective ocean freight to our customers. Irrespective of the cargo size or type, we can ensure your cargo will reach destination safely and in time.<br><br>
+                                    <b>EXPRESSGIG Couriers Company</b></p>
+                                <blockquote>- Full Container Load (FCL)<br>
+                                    - Less Than Container Load (LCL)<br>
+                                    - Cargo Consolidation Services<br>
+                                    - Oversized and Project Cargo<br>
+                                    - Cross Trades
+                                    FCL (Full container load):</blockquote>
+                                <p>With a setup of contracts with major shipping lines, EXPRESSGIG Couriers and Shipping Company has the edge of availing competitive rates for full loading of full containers from any of the worldwide ports ensuring we quickly adapt to your capacity requirements enabling your supply chain at optimal efficiency.
+                                    LCL (Less than container load):<br><br>
+
+                                    In the event your stock is not enough for accommodating. A full container, EXPRESSGIG Couriers  Company offer services for less than container loading as well across all major ports thereby providing a cost effective transportation solution for small and less time sensitive cargo shipments.
+                                    NCL (Non Containerized Load):<br><br>
+
+                                    When the cargo is not containerisable, we offer NCL options based on customer preference (shortest transit or most cost effective) our strong alliance with Break bulk, RORO, multipurpose vessel owners and agents helps us to secure most effective solution for NCL requirements.<br><br>
+                                    <b>EXPRESSGIG Couriers Features:</b><br>
+
+                                    - Reliable transit schedule<br>
+                                    - All major port coverage<br>
+                                    - Door to Door service<br>
+                                    - Simplified transport and freight process<br>
+                                    - Direct LCL consolidation Services<br>
+                                    - Experienced project cargo handling team<br><br>
+
+                                    <b>EXPRESSGIG Couriers Courier Benefits:</b><br>
+
+                                    - Our sales consultants understand customer requirement and offer the best value proposition
+                                    - Our proactive logistics staff will be connected to you throughout the transaction. Ocean Freight</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                    <div class="faqs-left-img">
+                                        <img src="{% static 'fast/img/service/bg.jpg' %}" alt=""> 
+                                    </div>
+                                </div>
+
+                                <!-- Why choose us starts here -->
+
+                                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                    <div class="faqs-list">
+                                        <h3>why choose EXPRESSGIG Couriers  Company</h3>
+                                        <div class="panel-group" id="accordion">
+                                            <div class="panel active">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#faqs_one"><i class="fa fa-minus"></i>Single point of contact</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="faqs_one" class="panel-collapse collapse">
+                                                    <div class="panel-body">In EXPRESSGIG Couriers Company we reach our clients around the globe from a primary source</div>
+                                                </div>
+                                            </div>
+                                            <div class="panel">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#faqs_two"><i class="fa fa-minus"></i>Regular and timely status updates</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="faqs_two" class="panel-collapse collapse">
+                                                    <div class="panel-body">In EXPRESSGIG Couriers and Shipping Company we update our clients and their destination in real time of every step we take in sending their packages</div>
+                                                </div>
+                                            </div>
+                                            <div class="panel">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#faqs_three"><i class="fa fa-minus"></i>Simplified transportations and freight process</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="faqs_three" class="panel-collapse collapse">
+                                                    <div class="panel-body">Because of our company capacity  and our determination to serve you better, transportation and freight process are like mare formalities</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Why choose us ends here -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 pull-left">
+                        <div class="service-menu">
+                            <h4>Service Details</h4>
+                            <ul>
+                                <li><a href="{% url 'land-freight' %}">Land Freight <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="{% url 'sea-freight' %}">Sea Freight <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="{% url 'air-freight' %}">Air Freight <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="{% url 'warehouse' %}">Warehouse  <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="{% url 'custom-clearance' %}">Custom Clearance <i class="fa fa-angle-right"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--SERVICE AREA END-->
+
+   <!--FOOER AREA-->
+     
+{% endblock %}

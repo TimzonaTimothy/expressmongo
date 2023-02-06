@@ -1,0 +1,133 @@
+{% extends 'fast/base.html' %}
+{% load static %}
+{% block content %}
+ 
+ 
+
+        <div class="welcome-area">
+            <div class="area-bg"></div>
+            <div class="container">
+                <div class="row flex-v-center">
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <div class="welcome-text text-center">
+                            <h2>Air Freight</h2>
+                            <ul class="page-location">
+                                <li><a href="{% url 'services' %}">Service</a></li>
+                                <li>/</li>
+                                <li><a href="{% url 'air-freight' %}">Air Freight</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END TOP AREA-->
+
+
+
+    
+
+           <!--SERVICE AREA-->
+        <section class="service-area-two section-padding gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-lg-9 col-sm-12 col-xs-12 pull-right">
+                        <div class="service-details-content">
+                            <div class="service-image">
+                                <img src="{% static 'fast/img/blog/bgg.jpg' %}" alt="">
+                            </div>
+                            <div class="service-details-text">
+                                <h3>Air Freight</h3>
+                                <p>EXPRESSGIG Couriers and Shipping Company provides national delivery services, with daily arrivals into Kuwait airport from the world's leading industrial markets.<br><br>
+
+                                <p>We appreciate that air freight can be a premium and costly service so we focus on fast transits and regular communication combined with the ability to exploit cost saving opportunities for all of our customers.<br><br>
+
+                                    Liaising closely with all the major carriers and a network of agents, we collect and deliver worldwide door-to-door, providing all the necessary documentation and customs requirements.
+                                    Air Charter<br><br>
+
+                                   EXPRESSGIG Couriers and Shipping Company delivers reliable and cost-effective air cargo charter services for:<br><br>
+                                    <b>Such items include:</b></p>
+                                <blockquote>� Heavy and outsize pieces<br>
+                                    � Oil and gas equipment<br>
+                                    � Automotive cargo<br>
+                                    � High value commodities<br>
+                                    � Aerospace equipment<br>
+                                    � High value commodities<br>
+                                    � Peacekeeping support<br>
+                                    � Humanitarian relief cargo<br>
+                                    � Dangerous goods<br>
+                                    � Aircraft on Ground (AOG) situations</blockquote>
+                                <p>We analyze route, payload and timescale in order to propose the most suitable aircraft for your requirements. We offer part-charters, backloads and other commercially innovative solutions for ad hoc, peak season and project cargo. We can provide pre-flight advice on packaging requirements, customs and warehousing, and supervise aircraft loading and unloading. We can also coordinate arrangements for specialist equipment, including cranes and custom-builtloading structures.</p>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                    <div class="faqs-left-img">
+                                        <img src="{% static 'fast/img/27.jpg' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
+                                    <div class="faqs-list">
+                                        <h3>why choose EXPRESSGIG Couriers Company</h3>
+                                        <div class="panel-group" id="accordion">
+                                            <div class="panel active">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#faqs_one"><i class="fa fa-minus"></i>Single point of contact</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="faqs_one" class="panel-collapse collapse">
+                                                    <div class="panel-body">In EXPRESSGIG Couriers Company we reach our clients around the globe from a primary source</div>
+                                                </div>
+                                            </div>
+                                            <div class="panel">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#faqs_two"><i class="fa fa-minus"></i>Regular and timely status updates</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="faqs_two" class="panel-collapse collapse">
+                                                    <div class="panel-body">In EXPRESSGIG Couriers Company we update our clients and their destination in real time of every step we take in sending their packages</div>
+                                                </div>
+                                            </div>
+                                            <div class="panel">
+                                                <div class="panel-heading">
+                                                    <h4 class="panel-title">
+                                                        <a data-toggle="collapse" data-parent="#accordion" href="#faqs_three"><i class="fa fa-minus"></i>Simplified transportations and freight process</a>
+                                                    </h4>
+                                                </div>
+                                                <div id="faqs_three" class="panel-collapse collapse">
+                                                    <div class="panel-body">Because of our company capacity  and our determination to serve you better, transportation and freight process are like mare formalities</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-12 col-xs-12 pull-left">
+                        <div class="service-menu">
+                            <h4>Service Details</h4>
+                           <ul>
+                                <li><a href="{% url 'land-freight' %}">Land Freight <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="{% url 'sea-freight' %}">Sea Freight <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="{% url 'air-freight' %}">Air Freight <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="{% url 'warehouse' %}">Warehouse  <i class="fa fa-angle-right"></i></a></li>
+                                <li><a href="{% url 'custom-clearance' %}">Custom Clearance <i class="fa fa-angle-right"></i></a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--SERVICE AREA END-->
+ <!--FOOER AREA-->
+     
+
+ 
+ 
+ {% endblock %}>

@@ -1,0 +1,416 @@
+{% extends 'fast/base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+        <!--HOME SLIDER AREA-->
+        <div class="welcome-slider-area">
+            <div class="welcome-single-slide slider-bg-one">
+                <div class="container">
+                    <div class="row flex-v-center">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="welcome-text text-center">
+                                <h1>Welcome to EXPRESSGIG Couriers</h1>
+                                <p>EXPRESSGIG Couriers and Shipping Company, is a one-stop freight and logistics solution, providing services to 
+								companies of all sizes, be it a small delivery across town or an industrial shipment to the other side 
+								of the globe.</p>
+                                <div class="home-button">
+                                    <a href="{% url 'track' %}">Tracking</a>
+                            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="welcome-single-slide slider-bg-two">
+                <div class="container">
+                    <div class="row flex-v-center">
+                        <div class="col-md-10 col-md-offset-1">
+                            <div class="welcome-text text-center">
+                                <h1>EXPRESSGIG Couriers</h1>
+                                <p>EXPRESSGIG Couriers having its strong alliance with shipping companies and global freight
+								partners enables to offer cost effective sea freight..</p>
+                                <div class="home-button">
+                                    <a href="{% url 'about' %}">About Us</a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END HOME SLIDER AREA-->
+    </header>
+
+
+    
+    <!--END TOP AREA-->
+    <br>
+    <br>
+    <center>
+        <form  action="{% url 'search' %}" class="search" method="GET" style="padding-top: 5px;">
+        <div class="container">
+            <div class="input-group w-100" style="display: flex;padding: 10px 22px;">
+                <input style="border-color: #f39c12;" type="text" class="form-control w-80" name="q" value="{{ request.GET.q }}" placeholder="Tracking number" required>
+                
+                
+                  <button id="bt" class="btn btn-primary w-20" style="border-color: #f39c12;background-color:#f39c12;padding: 0px 30px;" type="submit">
+                    <span class="txt" style="color:white;font-weight: lighter;">Track</span>
+                  </button>
+                
+            </div>
+        </div>
+    </form>
+    </center>
+   
+    <br>
+
+    <!--BLOG AREA-->
+    <section class="blog-area gray-bg padding-top">
+        <div class="container">
+          <div style="margin-left:0;" class="row">
+                    <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 wow fadeInLeft">
+                        <div class="single-blog wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="blog-image">
+                                <img src="{% static 'fast/img/blog/blog_1.jpeg' %}" alt="">
+                            </div>
+                            <div class="blog-details text-center">
+                                <div class="blog-meta"><a href=""><i class="fa fa-ship"></i></a></div>
+                                <h3><a href="{% url 'sea-freight' %}">Sea Freight</a></h3>
+                                <p>EXPRESSGIG Couriers having its strong alliance with shipping companies and global freight partners enables to offer cost effective sea freight..</p>
+                                <a href="{% url 'sea-freight' %}" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 wow fadeInLeft">
+                        <div class="single-blog wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="blog-image">
+                                <img src="{% static 'fast/img/blog/bgg.jpg' %}"x alt="">
+                            </div>
+                            <div class="blog-details text-center">
+                                <div class="blog-meta"><a href=""><i class="fa fa-plane"></i></a></div>
+                                <h3><a href="air-freight.php">Air Freight</a></h3>
+                                <p>EXPRESSGIG Couriers provides national delivery services, with daily arrivals into USA's airport from the world's leading industrial markets..</p>
+                                <a href="{% url 'air-freight' %}" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 wow fadeInLeft">
+                        <div class="single-blog wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="blog-image">
+                                <img src="{% static 'fast/img/blog/bg.jpg' %}" alt="">
+                            </div>
+                            <div class="blog-details text-center">
+                                <div class="blog-meta"><a href=""><i class="fa fa-truck"></i></a></div>
+                                <h3><a href="{% url 'land-freight' %}">Land Freight</a></h3>
+                                <p>EXPRESSGIG Couriers land freight services offer a highly flexible and a cost-effective solution to your road transport requirements..</p>
+                                <a href="{% url 'land-freight' %}" class="read-more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+    <!--BLOG AREA END-->
+
+    <!--ABOUT AREA-->
+    <section class="about-area gray-bg section-padding">
+        <div class="container">
+            <div style="margin-left:0;" class="row">
+                <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                    <div class="quote-form-area wow fadeIn">
+                        <!-- <h3>Get Our Services</h3>
+                        <form class="quote-form" action="https://greatheightlogistics.com/process.php">
+                            <p class="width-full">
+                                <input type="text" name="name" id="name" placeholder="Your Name">
+                            </p>
+                            <p class="width-half">
+                                <input type="email" name="email" id="email" placeholder="Email">
+                                <input class="pull-right" type="phone" name="phone" id="phone" placeholder="Phone">
+                            </p>
+                            <p class="width-half">
+                                <input type="text" name="type" id="type" placeholder="Type">
+                                <input class="pull-right" type="text" name="quantity" id="quantity" placeholder="Quantity">
+                            </p>
+                            <p class="width-full">
+                                <input type="text" name="destination" id="destination" placeholder="Destination">
+                            </p>
+                            <p>
+                                <textarea name="quote-message" id="quote-message" cols="30" rows="4" placeholder="Your Message..."></textarea>
+                            </p>
+                            <button type="submit">Send</button>
+                        </form> -->
+
+                        <img src="{% static 'fast/img/slider/px.jpg' %}" width="100%" height="100%" alt="">
+                    </div>
+                </div>
+
+                
+                 <div class="col-md-7 col-lg-7 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-12 wow fadeInRight">
+                        <div class="about-content-area wow fadeIn">
+                            <div class="about-content">
+                                <h2>We have 10 years experience in this passion</h2>
+                                <p>EXPRESSGIG Couriers Service and Shipping Company is a one-stop freight and logistics solution, providing services to companies of all sizes, be it a small delivery across town or an industrial shipment to the other side of the globe. Based on a solid financial footing and having invested remarkable amount of money / time on information technology and other over heads, the company's capabilities of sourcing new clients as well as improving cost efficiency are the key attributes for our success. Great Height Logistic has maintained a significant role in the total transportation arena for over a short time with its professional accredited staff who are our real assets.</p>
+                                <a href="{% url 'about' %}"><b>read more</b> <i class="fa fa-angle-right"></i></a>
+                            </div>
+                            <!-- <center>
+                                <div class="about-count">
+                                    <div class="single-about-count">
+                                        <h4><i class="fa fa-suitcase"></i> 79000</h4>
+                                        <p>Items Delivered</p>
+                                    </div>
+                                    <div class="single-about-count">
+                                        <h4><i class="fa fa-thumbs-o-up"></i> 48200</h4>
+                                        <p>Satisfied Clients</p>
+                                    </div>
+                                    <div class="single-about-count">
+                                        <h4><i class="fa fa-users"></i> 50+</h4>
+                                        <p>Team Workers</p>
+                                    </div>
+                                </div>
+                            </center> -->
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!--ABOUT AREA END-->
+
+    <!--SERVICE AREA-->
+    <!--SERVICE AREA-->
+        <section class="service-area">
+            <div class="service-top-area padding-top">
+                <div class="container">
+                    <div style="margin-left:0;" class="row">
+                        <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
+                            <div class="area-title text-center wow fadeIn">
+                                <h2>Our Service</h2>
+                                <p style="text-align:justify;">EXPRESSGIG Couriers & Shipping provides you with a cost effective Total Logistics & 
+								Transportation Services that are tailor- made to meet your precise requirements, leaving you free to stay 
+								focused on your core business activities. EXPRESSGIG Couriers global network relying on its 
+								overseas partners with whom we have built up a confidence and trust that has resulted fruitful tie up. </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-left:0;" class="row">
+                        <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12">
+                            <div class="service-content wow fadeIn">
+                                <h2>We offer quick & powerful logistics solution</h2>
+                                <p>And meets the needs of Global Commerce by providing Transportation & Logistics Services by Air, 
+								Sea & Land to & from any part of the Globe.</p>
+                                <a href="{% url 'services' %}" class="read-more">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12">
+                            <div>
+                                <div class="service-catalouge-bg"></div>
+                                <div style="margin-left:0;" class="row">
+                                    <div class="col-md-7 col-lg-7 col-md-offset-5 col-lg-offset-5 col-sm-12 col-xs-12">
+                                        <div class="catalouge-content">
+                                            <h3>Why Choose Us ?</h3>
+                                            <p>Our close collaboration and long-term relationship with carefully selected working partners enable us to guarantee our consistency in providing top services to our customers on a worldwide basis.</p>
+                                            <ul>
+                                                <li><i class="fa fa-check"></i>We focus on fast transits and regular communication.</li>
+                                                <li><i class="fa fa-check"></i>We offer cost effective ocean freight to customers.</li>
+                                                <li><i class="fa fa-check"></i>Land freight services offer a highly flexible.</li>
+                                                <li><i class="fa fa-check"></i>Stand-alone warehousing service to serve you.</li>
+                                            </ul>
+                                            <a href="{% url 'services' %}" class="read-more">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       <div class="service-bottom-area section-padding">
+                <div style=";background: rgba(0, 0, 0, 0) url('{% static 'fast/img/service/bg.jpg' %}') repeat scroll 0 0 ;
+                    height: 100%; left: 0;  position: absolute;  top: 0;    width: 100%;"></div>
+                <div class="container">
+                    <div style="margin-left:0;" class="row">
+                        <div class="col-md-6 col-lg-6 col-md-offset-6 col-lg-offset-6 col-sm-12 col-xs-12">
+                            <div class="service-list wow fadeIn">
+                                <div class="single-service">
+                                    <div class="service-icon-hexagon">
+                                        <div class="hex">
+                                            <div class="service-icon">
+                                                <i class="fa fa-dropbox"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="color: white;" class="service-details">
+                                        <h4>Warehouse</h4>
+                                        <p>Whether it's stand-alone warehousing service or combining it with other services to serve your needs, EXPRESSGIG Couriers Company can provide a totally integrated solution. You can count on our services team to handle your problems as well as your products..</p>
+                                        <a style="color: white;" href="{% url 'warehouse' %}"><b>read more</b> <i class="fa fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="single-service">
+                                    <div class="service-icon-hexagon">
+                                        <div class="hex">
+                                            <div class="service-icon"><i class="fa fa-truck"></i></div>
+                                        </div>
+                                    </div>
+                                    <div style="color: white;" class="service-details">
+                                        <h4>Land Freight</h4>
+                                        <p>EXPRESSGIG Couriers Company land freight services offer a highly flexible and a cost-effective solution to your road transport requirements.</p>
+                                        <a style="color: white;" href="{% url 'land-freight' %}"><b>read more</b> <i class="fa fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="single-service">
+                                    <div class="service-icon-hexagon">
+                                        <div class="hex">
+                                            <div class="service-icon"><i class="fa fa-ship"></i></div>
+                                        </div>
+                                    </div>
+                                    <div style="color: white;" class="service-details">
+                                        <h4>Sea Freight</h4>
+                                        <p>EXPRESSGIG Couriers Company having its strong alliance with shipping companies and global freight partners enables to offer cost effective ocean freight.</p>
+                                        <a style="color: white;" href="{% url 'sea-freight' %}"><b>read more</b> <i class="fa fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                                <div class="single-service">
+                                    <div class="service-icon-hexagon">
+                                        <div class="hex">
+                                            <div class="service-icon"><i class="fa fa-plane"></i></div>
+                                        </div>
+                                    </div>
+                                    <div style="color: white;" class="service-details">
+                                        <h4>Air Freight</h4>
+                                        <p>EXPRESSGIG Couriers Company provides national delivery services, with daily arrivals into USA airport from the world's leading industrial markets.</p>
+                                        <a style="color: white;" href="{% url 'air-freight' %}"><b>read more</b> <i class="fa fa-angle-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--SERVICE AREA END-->
+
+    <!--PROMO AREA-->
+    <!--PROMO AREA-->
+        <section class="promo-area">
+            <div >
+                <div class="container">
+                    <div style="margin-left:0;" class="row">
+                        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                            <div class="single-promo">
+                                <div class="promo-icon"><i class="fa fa-anchor"></i></div>
+                                <div class="promo-details">
+                                    <h3>HeadQuaters</h3>
+                                    <p>50 Colfax, Avenue Clifton,NJ07014 Germany</p>
+                                </div>
+                            </div>
+                            <div class="single-promo">
+                                <div class="promo-icon"><i class="fa fa-newspaper-o"></i></div>
+                                <div class="promo-details">
+                                    <h3>Latest News</h3>
+                                    <p>24 hours update of the wealther.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12">
+                            <div class="single-promo">
+                                <div class="promo-icon"><i class="fa fa-umbrella"></i></div>
+                                <div class="promo-details">
+                                    <h3>24/7 Support</h3>
+                                    <p>We provide 24 hours customer support services.</p>
+                                </div>
+                            </div>
+                            <div class="single-promo">
+                                <div class="promo-icon"><i class="fa fa-bicycle"></i></div>
+                                <div class="promo-details">
+                                    <h3>Fast Delevery</h3>
+                                    <p>We focus on fast transits and regular communication.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="promo-bottom-area section-padding">
+                <div style="background: rgba(0, 0, 0, 0) url('{% static 'fast/img/promo/wi3.jpeg' %}') no-repeat scroll center center / cover;
+                 height: 100%; left: 0; position: absolute; top: 0; width: 100%;" class="promo-botton-area-bg" data-stellar-background-ratio="0.6"></div>
+                <div class="container">
+                    <div style="margin-left:0;" class="row">
+                        <div class="col-md-10 col-lg-10 col-md-offset-1 col-lg-offset-1 col-sm-12 col-xs-12 text-center">
+                            <div class="promo-bottom-content wow fadeIn">
+                                <h2>We provide international freight &amp; logistics service worldwide</h2>
+                                <a href="{% url 'services' %}" class="read-more">Get our service</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--PROMO AREA END-->
+
+
+    <!--TESTMONIAL AREA -->
+    <section class="testmonial-area section-padding">
+        <div class="container">
+            <div style="margin-left:0;" class="row">
+                <div class="col-md-6 col-lg-6 col-md-offset-3 col-lg-offset-3 col-sm-12 col-xs-12">
+                    <div class="area-title text-center wow fadeIn">
+                        <h2>what client’s say</h2>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-left:0;" class="row">
+                <div class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+                    <div class="client-photo-list wow fadeIn">
+                        <div class="client_photo">
+                            <div class="item">
+                                <img src="{% static 'fast/img/testmonial/t1.jpg' %}" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'fast/img/testmonial/t2.jpg' %}" alt="">
+                            </div>
+                            <div class="item">
+                                <img src="{% static 'fast/img/testmonial/t3.jpg' %}" alt="">
+                            </div>
+                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-left:0;" class="row">
+                <div class="col-md-12">
+                    <div class="client_nav">
+                        <span class="fa fa-angle-left testi_prev"></span>
+                        <span class="fa fa-angle-right testi_next"></span>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-10 col-md-offset-1 text-center">
+                    <div class="client-details-content wow fadeIn">
+                        <div class="client_details">
+                            <div class="item">
+                                <q>EXPRESSGIG Couriers is very affordable </q>
+                                <h3>John Keats, Texas</h3>
+                                <p>Legal Practitioner</p>
+                            </div>
+                            <div class="item">
+                                <q>I so much rely on EXPRESSGIG Couriers for their fast delivery services</q>
+                                <h3>Ernest Hemingway</h3>
+                                <p>Senior Staff, Microsoft</p>
+                            </div>
+                            <div class="item">
+                                <q>EXPRESSGIG Couriers is the best Shipping company of 21st Century</q>
+                                <h3>Associate Thomas A. Brown</h3>
+                                <p>CEO, Digital-Hub</p>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--TESTMONIAL AREA END -->
+
+{% endblock %}
