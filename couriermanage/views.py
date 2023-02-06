@@ -30,7 +30,7 @@ def search(request):
 	paginator = Paginator(couriers, 10)
 	page_number = request.GET.get('page')
 	page_obj = paginator.get_page(page_number)
-	return render(request,'fast/search.html', {'page_obj':page_obj})
+	return render(request,'box/search.html', {'page_obj':page_obj})
 
 
 
@@ -46,28 +46,28 @@ def listing(request, id=None):
 		'transactions':t,
 		}
 
-    return render(request, 'fast/listing.html', context)
+    return render(request, 'box/listing.html', context)
 
 def about(request):
 	return render(request, 'box/about.html', {})
 
 def services(request):
-	return render(request, 'fast/services.html', {})
+	return render(request, 'box/services.html', {})
 
 def sea_freight(request):
-	return render(request, 'fast/sea-freight.html', {})
+	return render(request, 'box/sea-freight.html', {})
 
 def air_freight(request):
-	return render(request, 'fast/air-freight.html', {})
+	return render(request, 'box/air-freight.html', {})
 
 def land_freight(request):
-	return render(request, 'fast/land-freight.html', {})
+	return render(request, 'box/land-freight.html', {})
 
 def warehouse(request):
-	return render(request, 'fast/warehouse.html', {})
+	return render(request, 'box/warehouse.html', {})
 
 def custom_clearance(request):
-	return render(request, 'fast/custom-clearance.html', {})
+	return render(request, 'box/custom-clearance.html', {})
 
 def contact(request):
 	if request.method == "POST":
@@ -95,7 +95,7 @@ def contact(request):
 
 
 def track(request):
-	return render(request, 'fast/tracking.html', {})
+	return render(request, 'box/tracking.html', {})
 
 
 
