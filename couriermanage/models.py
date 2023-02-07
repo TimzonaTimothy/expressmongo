@@ -43,26 +43,26 @@ class Courier(models.Model):
 	def __str__(self):
 		return self.tracking_id
 	
-	def save(self):
-		if self.id:
-			old = Courier.objects.get(pk=self.id)
-			if old.status == 'ON' and self.sent == False:
-				user  = self.reciever_name
-				id = self.tracking_id
-				mail_subject = 'Shippment Notification'
+	# def save(self):
+	# 	if self.id:
+	# 		old = Courier.objects.get(pk=self.id)
+	# 		if old.status == 'ON' and self.sent == False:
+	# 			user  = self.reciever_name
+	# 			id = self.tracking_id
+	# 			mail_subject = 'Shippment Notification'
                 
-				message = render_to_string('box/shippment.html', {
-                    'user' : user,
-                    'id':id,
-                    })
-				to_email = self.reciever_email
-				send_email = EmailMessage(mail_subject, message, to=[to_email])
-				send_email.content_subtype = "html"
-				send_email.send()
+	# 			message = render_to_string('box/shippment.html', {
+    #                 'user' : user,
+    #                 'id':id,
+    #                 })
+	# 			to_email = self.reciever_email
+	# 			send_email = EmailMessage(mail_subject, message, to=[to_email])
+	# 			send_email.content_subtype = "html"
+	# 			send_email.send()
 				
-				self.sent = True
-				old.save()
-		super(Courier, self).save()
+	# 			self.sent = True
+	# 			old.save()
+	# 	super(Courier, self).save()
 
 class Transaction(models.Model):
 	parcel = models.ForeignKey(Courier, on_delete=models.CASCADE)
