@@ -34,7 +34,7 @@ class Courier(models.Model):
 	expected_delivery_date = models.DateTimeField(blank=True, null=True)
 	reference = models.CharField(blank=True, null=True, max_length=255)
 	status = models.CharField(max_length=20, choices=STATUS, default='OFF',null=True)
-	sent = models.BooleanField(default=False,null=True)
+	sent = models.BooleanField(default=False)
 	list_date = models.DateTimeField(default=timezone.datetime.now, blank = True, null=True)
 
 	def get_absolute_url(self):
@@ -47,7 +47,7 @@ class Courier(models.Model):
 		if self.id:
 			old = Courier.objects.get(pk=self.id)
 			if old.status == 'ON' and self.sent == False:
-				user  = self.sender_name
+				user  = self.reciever_name
 				id = self.tracking_id
 				mail_subject = 'Shippment Notification'
                 
@@ -55,12 +55,13 @@ class Courier(models.Model):
                     'user' : user,
                     'id':id,
                     })
-				to_email = self.sender_email
+				to_email = self.reciever_email
 				send_email = EmailMessage(mail_subject, message, to=[to_email])
 				send_email.content_subtype = "html"
 				send_email.send()
-				self.sent = False
-
+				
+				self.sent = True
+				old.save()
 		super(Courier, self).save()
 
 class Transaction(models.Model):
