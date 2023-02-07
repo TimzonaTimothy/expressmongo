@@ -1,0 +1,95 @@
+{% extends 'box/base.html' %} 
+{% load static %}
+{% block content %} 
+
+
+
+<section class="breadcrumb breadcrumb_bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcrumb_iner text-center">
+            <div class="breadcrumb_iner_item">
+              <h2>Warehouse</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blog_area single-post-area blog_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 posts-list">
+          <div class="single-post">
+            <div class="feature-img">
+              <img
+                class="img-fluid"
+                src="{% static 'box/img/bg.jpg' %}"
+                alt=""
+              />
+            </div>
+            <div class="blog_details">
+            
+              <h3>
+                Warehouse
+              </h3>
+              <p>Whether its stand-alone warehousing service or combining it with other services to serve your needs, EXPRESSMONGO Courier can provide a totally integrated solution. You can count on our services team to handle your problems as well as your products.<br><br>
+
+                The scope of our service is commonly classified in the area of the inventory management, warehousing, transport, and logistics. Our services help our clients understand their current issues and ensure cost-effective warehousing services with benchmarked customer service levels.<br><br>
+
+                We help clients move or consolidate current facilities and operations. We can manage your warehouse or provide a new warehouse or a combination of both.<br><br>
+
+              <br><br>
+             
+        </div>
+          </div>
+          
+        </div>
+        <div class="col-lg-4">
+          <div class="blog_right_sidebar">
+            
+            <aside class="single_sidebar_widget post_category_widget">
+              <h4 class="widget_title">Freights</h4>
+              <ul class="list cat-list">
+                <li>
+                  <a href="{% url 'sea-freight' %}" class="d-flex">
+                    <p>Sea Freight</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'air-freight' %}" class="d-flex">
+                    <p>Air Freight</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'land-freight' %}" class="d-flex">
+                    <p>Land Freight</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'warehouse' %}" class="d-flex">
+                    <p>Warehouse</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'custom-clearance' %}" class="d-flex">
+                    <p>Custom Clearance</p>
+                    
+                  </a>
+                </li>
+                
+              </ul>
+            </aside>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

@@ -1,0 +1,105 @@
+{% extends 'box/base.html' %} 
+{% load static %}
+{% block content %} 
+
+
+
+<section class="breadcrumb breadcrumb_bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcrumb_iner text-center">
+            <div class="breadcrumb_iner_item">
+              <h2>Air Freight</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blog_area single-post-area blog_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 posts-list">
+          <div class="single-post">
+            <div class="feature-img">
+              <img
+                class="img-fluid"
+                src="{% static 'box/img/bg.jpg' %}"
+                alt=""
+              />
+            </div>
+            <div class="blog_details">
+            <h3>Air Freight</h3>
+              <p>
+                EXPRESSMONGO Couriers and Shipping Company provides national delivery services, with daily arrivals into Kuwait airport from the world's leading industrial markets.
+              </p>
+              <p>We appreciate that air freight can be a premium and costly service so we focus on fast transits and regular communication combined with the ability to exploit cost saving opportunities for all of our customers.<br><br>
+
+                Liaising closely with all the major carriers and a network of agents, we collect and deliver worldwide door-to-door, providing all the necessary documentation and customs requirements.
+                Air Charter<br><br>
+
+               EXPRESSMONGO Couriers and Shipping Company delivers reliable and cost-effective air cargo charter services for:<br><br>
+                <b>Such items include:</b></p>
+            <blockquote>� Heavy and outsize pieces<br>
+                � Oil and gas equipment<br>
+                � Automotive cargo<br>
+                � High value commodities<br>
+                � Aerospace equipment<br>
+                � High value commodities<br>
+                � Peacekeeping support<br>
+                � Humanitarian relief cargo<br>
+                � Dangerous goods<br>
+                � Aircraft on Ground (AOG) situations</blockquote>
+            <p>We analyze route, payload and timescale in order to propose the most suitable aircraft for your requirements. We offer part-charters, backloads and other commercially innovative solutions for ad hoc, peak season and project cargo. We can provide pre-flight advice on packaging requirements, customs and warehousing, and supervise aircraft loading and unloading. We can also coordinate arrangements for specialist equipment, including cranes and custom-builtloading structures.</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-lg-4">
+          <div class="blog_right_sidebar">
+            
+            <aside class="single_sidebar_widget post_category_widget">
+              <h4 class="widget_title">Freights</h4>
+              <ul class="list cat-list">
+                <li>
+                  <a href="{% url 'sea-freight' %}" class="d-flex">
+                    <p>Sea Freight</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'air-freight' %}" class="d-flex">
+                    <p>Air Freight</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'land-freight' %}" class="d-flex">
+                    <p>Land Freight</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'warehouse' %}" class="d-flex">
+                    <p>Warehouse</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'custom-clearance' %}" class="d-flex">
+                    <p>Custom Clearance</p>
+                    
+                  </a>
+                </li>
+                
+              </ul>
+            </aside>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

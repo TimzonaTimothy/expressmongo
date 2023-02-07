@@ -1,0 +1,115 @@
+{% extends 'box/base.html' %} 
+{% load static %}
+{% block content %} 
+
+
+
+<section class="breadcrumb breadcrumb_bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcrumb_iner text-center">
+            <div class="breadcrumb_iner_item">
+              <h2>Sea Freight</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blog_area single-post-area blog_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 posts-list">
+          <div class="single-post">
+            <div class="feature-img">
+              <img
+                class="img-fluid"
+                src="{% static 'box/img/bg.jpg' %}"
+                alt=""
+              />
+            </div>
+            <div class="blog_details">
+              <h3>Sea Freight</h3>
+              <p>
+                EXPRESSMONGO Couriers and shipping Company having its strong alliance with shipping companies and global freight partners enables to offer cost effective ocean freight to our customers. Irrespective of the cargo size or type, we can ensure your cargo will reach destination safely and in time.
+              </p>
+              <b>EXPRESSMONGO Couriers Company</b></p>
+                                <blockquote>- Full Container Load (FCL)<br>
+                                    - Less Than Container Load (LCL)<br>
+                                    - Cargo Consolidation Services<br>
+                                    - Oversized and Project Cargo<br>
+                                    - Cross Trades
+                                    FCL (Full container load):</blockquote>
+                                <p>With a setup of contracts with major shipping lines, EXPRESSMONGO Couriers and Shipping Company has the edge of availing competitive rates for full loading of full containers from any of the worldwide ports ensuring we quickly adapt to your capacity requirements enabling your supply chain at optimal efficiency.
+                                    LCL (Less than container load):<br><br>
+
+                                    In the event your stock is not enough for accommodating. A full container, EXPRESSMONGO Couriers  Company offer services for less than container loading as well across all major ports thereby providing a cost effective transportation solution for small and less time sensitive cargo shipments.
+                                    NCL (Non Containerized Load):<br><br>
+
+                                    When the cargo is not containerisable, we offer NCL options based on customer preference (shortest transit or most cost effective) our strong alliance with Break bulk, RORO, multipurpose vessel owners and agents helps us to secure most effective solution for NCL requirements.<br><br>
+                                    <b>EXPRESSMONGO Couriers Features:</b><br>
+
+                                    - Reliable transit schedule<br>
+                                    - All major port coverage<br>
+                                    - Door to Door service<br>
+                                    - Simplified transport and freight process<br>
+                                    - Direct LCL consolidation Services<br>
+                                    - Experienced project cargo handling team<br><br>
+
+                                    <b>EXPRESSMONGO Couriers Courier Benefits:</b><br>
+
+                                    - Our sales consultants understand customer requirement and offer the best value proposition
+                                    - Our proactive logistics staff will be connected to you throughout the transaction. Ocean Freight</p>
+              
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-lg-4">
+          <div class="blog_right_sidebar">
+            
+            <aside class="single_sidebar_widget post_category_widget">
+              <h4 class="widget_title">Freights</h4>
+              <ul class="list cat-list">
+                <li>
+                  <a href="{% url 'sea-freight' %}" class="d-flex">
+                    <p>Sea Freight</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'air-freight' %}" class="d-flex">
+                    <p>Air Freight</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'land-freight' %}" class="d-flex">
+                    <p>Land Freight</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'warehouse' %}" class="d-flex">
+                    <p>Warehouse</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'custom-clearance' %}" class="d-flex">
+                    <p>Custom Clearance</p>
+                    
+                  </a>
+                </li>
+                
+              </ul>
+            </aside>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

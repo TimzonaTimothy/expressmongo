@@ -1,0 +1,101 @@
+{% extends 'box/base.html' %} 
+{% load static %}
+{% block content %} 
+
+
+
+<section class="breadcrumb breadcrumb_bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcrumb_iner text-center">
+            <div class="breadcrumb_iner_item">
+              <h2>Land Freight</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blog_area single-post-area blog_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 posts-list">
+          <div class="single-post">
+            <div class="feature-img">
+              <img
+                class="img-fluid"
+                src="{% static 'box/img/bg.jpg' %}"
+                alt=""
+              />
+            </div>
+            <div class="blog_details">
+            <h3>Land Freight</h3>
+              <p>
+                EXPRESSMONGO logistics Company land freight services offer a highly flexible and a cost-effective solution to your road transport requirements. Our road transport service providers are equipped with appropriate country specific permits thereby ensuring timely and hassle free deliveries to their respective destinations.
+              </p>
+              <blockquote>- Full truckload (FTL)<br>
+                - Less truckload (LTL)<br>
+                - Hazardous cargo<br>
+                - Refrigerated cargo<br>
+                - Cross-border trades (GCC)</blockquote>
+            <p>
+                <b>Special features</b><br>
+                - Service to most of the GCC locations<br>
+                - Reliable transit schedules<br><br>
+
+                <b>EXPRESSMONGO logistics Company benefits for:-</b><br>
+                - Single point of contact<br>
+                - Regular and timely status updates<br>
+                - Simplified transportations and freight process</p>
+        </div>
+          </div>
+          
+        </div>
+        <div class="col-lg-4">
+          <div class="blog_right_sidebar">
+            
+            <aside class="single_sidebar_widget post_category_widget">
+              <h4 class="widget_title">Freights</h4>
+              <ul class="list cat-list">
+                <li>
+                  <a href="{% url 'sea-freight' %}" class="d-flex">
+                    <p>Sea Freight</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'air-freight' %}" class="d-flex">
+                    <p>Air Freight</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'land-freight' %}" class="d-flex">
+                    <p>Land Freight</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'warehouse' %}" class="d-flex">
+                    <p>Warehouse</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'custom-clearance' %}" class="d-flex">
+                    <p>Custom Clearance</p>
+                    
+                  </a>
+                </li>
+                
+              </ul>
+            </aside>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}

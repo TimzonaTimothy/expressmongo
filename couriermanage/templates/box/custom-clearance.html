@@ -1,0 +1,88 @@
+{% extends 'box/base.html' %} 
+{% load static %}
+{% block content %} 
+
+
+
+<section class="breadcrumb breadcrumb_bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcrumb_iner text-center">
+            <div class="breadcrumb_iner_item">
+              <h2>Custom Clearance</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="blog_area single-post-area blog_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 posts-list">
+          <div class="single-post">
+            <div class="feature-img">
+              <img
+                class="img-fluid"
+                src="{% static 'box/img/bg.jpg' %}"
+                alt=""
+              />
+            </div>
+            <div class="blog_details">
+              <h3>Custom Clearance</h3>
+              <p>
+                The custom rules and process can be tedious and time consuming if not handled appropriately. More over the custom duty rates & entry process differ from country to country . Due to regular regularization in custom & security , the international trade is now more challenging. British Logistics custom clearance consultancy division always strives to simplify and ease cross border trade. We chalks out every possible delays and take proactive measures to avoid delay in clearance process.
+              </p>
+             <p> We reassure practice of industry standards & compliance of custom rules. Our in-house custom professional & our association with local custom clearance experts, we get to know any change in procedures and keep you informed about the prevailing rules and regulations which will allow you to devise well informed decisions with minimum lead time.<br><br></p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-lg-4">
+          <div class="blog_right_sidebar">
+            
+            <aside class="single_sidebar_widget post_category_widget">
+              <h4 class="widget_title">Freights</h4>
+              <ul class="list cat-list">
+                <li>
+                  <a href="{% url 'sea-freight' %}" class="d-flex">
+                    <p>Sea Freight</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'air-freight' %}" class="d-flex">
+                    <p>Air Freight</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'land-freight' %}" class="d-flex">
+                    <p>Land Freight</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'warehouse' %}" class="d-flex">
+                    <p>Warehouse</p>
+                    
+                  </a>
+                </li>
+                <li>
+                  <a href="{% url 'custom-clearance' %}" class="d-flex">
+                    <p>Custom Clearance</p>
+                    
+                  </a>
+                </li>
+                
+              </ul>
+            </aside>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
