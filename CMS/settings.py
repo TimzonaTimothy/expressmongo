@@ -25,7 +25,7 @@ SECRET_KEY = '$5a%%cj78_@&x045mb1bqe1el%$&5bnxd%qi=w*=xqb*txl2u-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', '127.0.0.1','https://expressmongo.com','http://expressmongo.com']
+ALLOWED_HOSTS = ['*', '127.0.0.1',]
 
 
 # Application definition
@@ -151,7 +151,7 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
 
-
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO','https')
-SECURE_SSL_REDIRECT = True
-    
+# if os.getcwd() == '/app':
+#     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO','https')
+#     SECURE_SSL_REDIRECT = True
+#     DEBUG = False
