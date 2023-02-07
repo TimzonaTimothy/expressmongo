@@ -72,7 +72,7 @@ def custom_clearance(request):
 def contact(request):
 	if request.method == "POST":
 		massage_firstname = request.POST['firstname'] 
-		massage_lastname = request.POST['lastname'] 
+		massage_lastname = massage_firstname
 		massage_email = request.POST['email']
 		massage_subject = request.POST['massage_subject']
 		massage = request.POST['message']
@@ -80,7 +80,7 @@ def contact(request):
             
 		contact = Contact.objects.create(first_name=massage_firstname,last_name=massage_lastname,email=massage_email,message_subject=massage_subject,message=massage)
 		contact.save();
-		messages.success(request, 'Your massage has been submitted ','alert alert-success alert-dismissible')
+		messages.success(request, 'Your massage has been submitted ','')
 		# send_mail(
 		# 	massage_firstname + ''+ massage_lastname +' sent you an enquiry '+ massage_email + ' '+ massage_subject,
 		# 	massage,

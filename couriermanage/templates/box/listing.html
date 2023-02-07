@@ -37,13 +37,45 @@
               <tr>
                 <td>Tracking No</td>
                 <td>{{ listing.tracking_id }}</td>
-                
               </tr>
-            
+              <tr>
+                <td>Sender Name</td>
+                <td>{{ listing.sender_name }}</td>
+              </tr>
+              <tr>
+                <td>Sender Email</td>
+                <td>{{ listing.sender_email }}</td>
+              </tr>
+              <tr>
+                <td>Sender Address</td>
+                <td>{{ listing.sender_address }}</td>
+              </tr>
+              <tr>
+                <td>Reciever Name</td>
+                <td>{{ listing.reciever_name }}</td>
+              </tr>
+              {% if listing.reciever_phone %}
+              <tr>
+                <td>Reciever Phone</td>
+                <td>{{ listing.reciever_phone }}</td>
+              </tr>
+              {% endif %}
+
+              <tr>
+                <td>Reciever Email</td>
+                <td>{{ listing.reciever_email }}</td>
+              </tr>
+              <tr>
+                <td>Origin</td>
+                <td>{{ listing.origin }}</td>
+              </tr>
+              <tr>
+                <td>Destination</td>
+                <td>{{ listing.destination }}</td>
+              </tr>
               <tr >
                 <td>Quantity</td>
                 <td>{{ listing.quantity }}</td>
-                
               </tr>
               <tr>
                 <td>Content</td>
@@ -83,7 +115,14 @@
                 <td>Reference</td>
                 <td>{{ listing.reference }}</td>
               </tr>
-                
+                <tr>
+                    <td>Departure Time</td>
+                    <td>{{ listing.departure_time }}</td>
+                </tr>
+                <tr>
+                    <td>Expected Delivery Date</td>
+                    <td>{{ listing.expected_delivery_date }}</td>
+                </tr>
               </tbody>
                  
             </table>

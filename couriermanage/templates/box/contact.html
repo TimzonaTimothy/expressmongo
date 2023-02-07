@@ -36,7 +36,7 @@
             >
             {% csrf_token %}
               <div class="row">
-                <div class="col-12">
+                <!-- <div class="col-12">
                   <div class="form-group">
                     <textarea
                       class="form-control w-100"
@@ -49,12 +49,12 @@
                       placeholder="Enter Message"
                     ></textarea>
                   </div>
-                </div>
+                </div> -->
                 <div class="col-sm-6">
                   <div class="form-group">
                     <input
                       class="form-control"
-                      name="name"
+                      name="firstname"
                       id="name"
                       type="text"
                       onfocus="this.placeholder = ''"
@@ -80,13 +80,18 @@
                   <div class="form-group">
                     <input
                       class="form-control"
-                      name="subject"
+                      name="massage_subject"
                       id="subject"
                       type="text"
                       onfocus="this.placeholder = ''"
                       onblur="this.placeholder = 'Enter Subject'"
                       placeholder="Enter Subject"
                     />
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <textarea name="message" id="" class="form-control"  cols="30" rows="9" placeholder="Enter Message"></textarea>
                   </div>
                 </div>
               </div>
