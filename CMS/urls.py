@@ -18,7 +18,7 @@ from django.contrib.auth import logout, views as auth_views
 from django.urls import path, include
 from users import views as user_views
 from couriermanage import views as courier_views
-from django.conf.urls import url
+
 
 
 urlpatterns = [
@@ -42,5 +42,5 @@ urlpatterns = [
     # path('login/', courier_views.sign_in, name='login'),
     # path('register/', courier_views.register, name='register'),
     path('search/',courier_views.search,name='search'),
-    url(r'(?P<id>\d+)/$', courier_views.listing, name='detail')
+    
 ]

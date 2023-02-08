@@ -85,24 +85,16 @@ WSGI_APPLICATION = 'CMS.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#    'default': {
-#       'ENGINE' : 'djongo',
-      
-#        'NAME' : 'expressmongo', #as named on server
-      
-#        'HOST' : 'mongodb+srv://expressmongo:express1111@cluster0.snovx6m.mongodb.net/?retryWrites=true&w=majority',
-#        'USER' : 'expressmongo',
-#        "PASSWORD" : 'express1111',
-# #that is your connection link with your username,password and db name,here i created a db using mlabs of mongodb       'USER' : '<dbuser>',       'PASSWORD' : '<dbpassword>',
-#    }
-# }
-
-
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'), conn_max_age=600),
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'storm_zdhw', 
+        'USER': 'storm_zdhw_user', 
+        'PASSWORD': '1f4CwYyK6ODuQGJQCpzvLWRQc5HELiLI',
+        'HOST': 'dpg-cevdmm82i3mntl1hap0g-a', 
+        'PORT': '5432',
+    }
 }
-
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 
