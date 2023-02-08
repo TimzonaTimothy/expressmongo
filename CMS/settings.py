@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import dj_database_url
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -76,14 +78,30 @@ WSGI_APPLICATION = 'CMS.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
+# DATABASES = {
+#    'default': {
+#       'ENGINE' : 'djongo',
+      
+#        'NAME' : 'expressmongo', #as named on server
+      
+#        'HOST' : 'mongodb+srv://expressmongo:express1111@cluster0.snovx6m.mongodb.net/?retryWrites=true&w=majority',
+#        'USER' : 'expressmongo',
+#        "PASSWORD" : 'express1111',
+# #that is your connection link with your username,password and db name,here i created a db using mlabs of mongodb       'USER' : '<dbuser>',       'PASSWORD' : '<dbpassword>',
+#    }
+# }
+
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'), conn_max_age=600),
 }
-
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
