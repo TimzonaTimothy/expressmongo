@@ -42,5 +42,5 @@ urlpatterns = [
     # path('login/', courier_views.sign_in, name='login'),
     # path('register/', courier_views.register, name='register'),
     path('search/',courier_views.search,name='search'),
-    
+    path('int:id', courier_views.listing, name='detail'),
 ]
