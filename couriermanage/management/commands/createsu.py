@@ -13,3 +13,4 @@ class Command(BaseCommand):
                 password='express1111'
             )
         print('Superuser has been created.')
+        

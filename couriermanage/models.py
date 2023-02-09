@@ -24,6 +24,7 @@ class Courier(models.Model):
 	reciever_phone = models.CharField(max_length=200,blank=True, null=True)
 	reciever_address = models.CharField(max_length=500, blank=True, null=True)
 	reciever_email = models.EmailField(blank=True,null=True)
+	payment = models.CharField(max_length=500, blank=True, null=True)
 	origin = models.CharField(max_length=200, blank=True, null=True)
 	destination = models.CharField(max_length=300, blank=True, null=True)
 	quantity = models.IntegerField(blank=True,null=True)

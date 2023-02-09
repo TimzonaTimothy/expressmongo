@@ -27,7 +27,7 @@ SECRET_KEY = '$5a%%cj78_@&x045mb1bqe1el%$&5bnxd%qi=w*=xqb*txl2u-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', '127.0.0.1',]
+ALLOWED_HOSTS = ['*', '127.0.0.1','expressmongo.com',]
 
 
 # Application definition
@@ -91,7 +91,7 @@ DATABASES = {
         'NAME': 'storm_zdhw', 
         'USER': 'storm_zdhw_user', 
         'PASSWORD': '1f4CwYyK6ODuQGJQCpzvLWRQc5HELiLI',
-        'HOST': 'dpg-cevdmm82i3mntl1hap0g-a', 
+        'HOST': 'dpg-cevdmm82i3mntl1hap0g-a.oregon-postgres.render.com', 
         'PORT': '5432',
     }
 }
