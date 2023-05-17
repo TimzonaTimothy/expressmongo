@@ -65,6 +65,12 @@
                 <td>Reciever Email</td>
                 <td>{{ listing.reciever_email }}</td>
               </tr>
+                  {% if listing.reciever_address %}
+                  <tr>
+                <td>Reciever Address</td>
+                <td>{{ listing.reciever_address }}</td>
+              </tr>
+                  {% endif %}
               <tr>
                 <td>Origin</td>
                 <td>{{ listing.origin }}</td>
